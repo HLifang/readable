@@ -1,5 +1,112 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Helvetica Neue",sans-serif;
+  background-color: #f0f3ef;
+}
+.header{
+    margin: 0 auto;
+    width: 87%;
+    height: 80px;
+    line-height: 80px;
+}
+.header h1{
+    margin: 0;
+}
+.nav-menu{
+    margin: 0;
+    float: left;
+}
+.nav-menu li{
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.card-lists{
+    margin: 0 auto;
+    width: 90%;
+}
+.card-lists li{
+    background: #fff;
+    list-style: none;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+.card-list-title{
+    margin: 0;
+    font-weight: normal;
+    color: #222;
+    line-height: 1.2;
+}
+.card-list-subtitle{
+    margin: 0;
+    color: #666;
+    padding: 6px 0;
+}
+.sub-info span{
+    display: inline-block;
+    color: #999;
+    margin-right: 15px;
+}
+
+.input{
+    width: 300px;
+    line-height: 28px;
+    padding: 3px 5px;
+}
+.textarea{
+    width: 300px;
+    height: 100px;
+    padding: 3px 5px;
+}
+.btn{
+    display: inline-block;
+    height: 40px;
+    line-height: 38px;
+    padding: 0 24px;
+    border-radius:20px;
+    text-align: center;
+}
+.btn-primary{
+    background:#2f54eb;
+    border: 1px solid #2f54eb;
+    color: #fff; 
+    font-size: 16px;
+}
+.select{
+    width: 310px;
+    height: 38px;
+}
+.form-items li{
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.form-items li span{
+    float: left;
+    width: 80px;
+}
+.clearfix{
+    clear: both;
+    overflow: hidden;
+}
+.add-post{
+    position: absolute;
+    bottom:10%;
+    right: 5%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-color: #fff; 
+    text-align: center;
+}
+.add-post a{
+    display: block;
+    text-decoration: none;
+    font-size: 28px;
+    color: #24A0ED;
 }
