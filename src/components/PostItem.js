@@ -51,19 +51,18 @@ class PostItem extends Component{
                 </h3>
                 <p className="card-list-subtitle">{item.body}</p>
                 <div className="sub-info">
-                    <span>category:{item.category}</span>
-                    <span>author:{item.author}</span>
-                    <span>comment:{item.commentCount}</span>
-                    <span>vote:{item.voteScore}</span>
-                    <span>time:{convertTime(item.timestamp)}</span>
-                    <span>
+                    <span><i className="icon-author"></i>{item.author}</span>
+                    <span><i className="icon-comment"></i>{item.commentCount}</span>
+                    <span><i className="icon-vote"></i>{item.voteScore}</span>
+                    <span>{convertTime(item.timestamp)}</span>
+                    <span className="edit">
                         <Link to={{
                             pathname: '/CreateView',
                             search: '?type=edit',
                             state: item
                         }}>edit</Link>
                     </span>
-                    <span onClick={(e)=>this.handleDelete(e,item.id)}>delete</span>
+                    <span className="delete" onClick={(e)=>this.handleDelete(e,item.id)}>delete</span>
                 </div>
             </li>
         );

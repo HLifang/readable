@@ -32,23 +32,71 @@ body {
     list-style: none;
     border: 1px solid #f0f0f0;
     margin-bottom: 20px;
-    padding: 10px 20px;
+    padding: 10px 20px 15px;
 }
 .card-list-title{
-    margin: 0;
+    margin: 5px 0;
     font-weight: normal;
     color: #222;
     line-height: 1.2;
 }
+.card-list-title a{
+    text-decoration: none;
+    color: #0066b3;
+}
 .card-list-subtitle{
     margin: 0;
     color: #666;
-    padding: 6px 0;
+    padding: 6px 0 10px;
+}
+.sub-info{
+    position: relative;
+    font-size: 14px;
 }
 .sub-info span{
     display: inline-block;
-    color: #999;
+    color: #666;
     margin-right: 15px;
+}
+.sub-info span i{
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+}
+.icon-author{
+    background-image: url('./icons/author.svg');
+}
+.icon-comment{
+    color: #333;
+    background-image: url('./icons/comment.svg');
+}
+.icon-vote{
+    background-image: url('./icons/vote.svg');
+}
+.edit,.delete{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.edit{
+    right: 30px;
+    top: -3px;
+    background-image: url('./icons/edit.svg');
+}
+.delete{
+    right: -10px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('./icons/delete.svg');
 }
 
 .input{
@@ -60,25 +108,28 @@ body {
     width: 300px;
     height: 100px;
     padding: 3px 5px;
+    border: 1px solid #ddd;
 }
 .btn{
     display: inline-block;
     height: 40px;
     line-height: 38px;
     padding: 0 24px;
-    border-radius:20px;
     text-align: center;
 }
 .btn-primary{
-    background:#2f54eb;
-    border: 1px solid #2f54eb;
+    background:#0066b3;
+    border: 1px solid #0066b3;
     color: #fff; 
     font-size: 16px;
 }
 .select{
     width: 310px;
     height: 38px;
+    border: 1px solid #ddd;
+    background: #fff;
 }
+
 .form-items li{
     list-style: none;
     margin-bottom: 15px;
@@ -96,17 +147,24 @@ body {
     position: absolute;
     bottom:10%;
     right: 5%;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50%;
-    border: 1px solid #ccc;
-    background-color: #fff; 
-    text-align: center;
 }
 .add-post a{
     display: block;
-    text-decoration: none;
-    font-size: 28px;
-    color: #24A0ED;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 0;
+    background-image: url('./icons/add.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.close-create-contact{
+    display: block;
+    margin: 15px 0 30px 30px;
+    width: 24px;
+    height: 24px;
+    background-image: url('./icons/arrow-back.svg');
+    font-size: 0;
+    cursor: pointer;
 }
