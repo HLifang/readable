@@ -5,6 +5,7 @@ body {
   background-color: #f0f3ef;
 }
 .header{
+    position: relative; 
     margin: 0 auto;
     width: 87%;
     height: 80px;
@@ -14,15 +15,28 @@ body {
     margin: 0;
 }
 .nav-menu{
+    position: absolute;
+    left: 200px;
+    top: 50%;
+    transform: translateY(-50%);
     margin: 0;
+    padding:0;
     float: left;
+    border: 1px solid #0066b3;
+    border-radius: 5px;
 }
 .nav-menu li{
     float: left;
+    line-height: 32px;
     list-style: none;
-    margin-right: 20px;
     cursor: pointer;
+    padding: 0 28px;
 }
+.nav-menu li.on{
+    background: #0066b3;
+    color: #fff;
+}
+
 .card-lists{
     margin: 0 auto;
     width: 90%;

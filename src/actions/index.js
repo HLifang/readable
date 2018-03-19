@@ -13,6 +13,18 @@ export const VOTING_ON_COMMENT ='VOTING_ON_COMMENT';
 export const EDIT_COMMENT ='EDIT_COMMENT';
 export const DELETE_COMMENT ='DELETE_COMMENT';
 
+export const setActiveFilter=(filter)=>({
+    type:'SET_ACTIVE_FILTER',
+    filter
+})
+
+export const VisibilityFilter={
+    SHOW_ALL:'SHOW_ALL',
+    SHOW_REDUX:'SHOW_REDUX',
+    SHOW_REACT:'SHOW_REACT',
+    SHOW_UDACITY:'SHOW_UDACITY'
+}
+
 export const getAllCategory=(results)=>({
     type:GET_ALL_CATEGORY,
     results
